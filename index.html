@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Access</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #3f51b5;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      color: #fff;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .recipe {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .recipe img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .recipe h2 {
+      margin-top: 0;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    form {
+      margin-top: 20px;
+    }
+    form h2 {
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #3f51b5;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Recipe Access</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#product">Product</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <div class="container" id="home">
+    <div class="recipe">
+      <img src="https://via.placeholder.com/300" alt="Recipe Image">
+      <h2>Delicious Pancakes</h2>
+      <p>This recipe will show you how to make fluffy pancakes from scratch.</p>
+    </div>
+    <div class="recipe">
+      <img src="https://via.placeholder.com/300" alt="Recipe Image">
+      <h2>Spaghetti Carbonara</h2>
+      <p>A classic Italian dish made with pasta, eggs, cheese, and pancetta.</p>
+    </div>
+    <div class="recipe">
+      <img src="https://via.placeholder.com/300" alt="Recipe Image">
+      <h2>Vegetable Stir-Fry</h2>
+      <p>This stir-fry recipe is packed with colorful veggies and flavorful sauce.</p>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2024 Recipe Access. All rights reserved.</p>
+  </footer>
+
+  <div class="container" id="product">
+    <form>
+      <h2>Subscribe to Get Access to Recipes!</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+
+</body>
+</html>
